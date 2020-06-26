@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+<title>THỬ THÁCH SỐ 12 - NHẬT KÝ DU HỌC</title>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+</style>
+</head>
+<body>
+
+<div class="row justify-content-md-center" style="background-color: #ffd54f; box-sizing: border-box; margin: 0; padding: 10px;">
+<div class="col-lg-auto col-sm-auto col-md-auto col-auto">
+<h1 class="text-center">Bài thi kết thúc sau:</h1>
+<ul class="list-group list-group-horizontal align-items-center">
+<li style="display: inline-block;font-size: 1.5em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+<span class="text-center" id="hours" style=" display: block;font-size: 3rem;"></span>Hours</li>
+<li style="display: inline-block;font-size: 1.5em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+<span class="text-center" id="minutes" style=" display: block;font-size: 3rem;"></span>Minutes</li>
+<li style="display: inline-block;font-size: 1.5em;list-style-type: none;padding: 1em;text-transform: uppercase;">
+<span class="text-center" id="seconds" style=" display: block;font-size: 3rem;"></span>Seconds</li>
+</ul>
+<h3 id="demo" class="text-center" style="color: red; "></h3>
+</div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script>
+var second = 1,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+var countDown = new Date().getTime(),
+x = setInterval(function() { 
+
+var now = new Date().getTime(),
+distance = (countDown + 1800000 - now) / 1000;
+
+if(distance > 0){
+document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+}else{
+document.getElementById("demo").innerHTML = "Đã Hết Giờ Làm Bài!";
+}
+//do something later when date is reached
+//if (distance < 0) {
+// clearInterval(x);
+// 'IT'S MY BIRTHDAY!;
+//}
+
+}, second)
+</script>
+</body>
+</html>
+
+    <table border="1" style="width:100%">
+        <tr>
+            <th rowspan="3"><iframe src="https://drive.google.com/file/d/1bJdLNYYhmUZorDa-5xfTejZhjooE4RHh/preview" width="750" height="700" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe></th>
+            <td><iframe height="100" src="https://drive.google.com/file/d/18qW2OAaPCNljJt3rSjPG5XQAYQ-DHX6i/preview" width="500"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIRI_BrzsiWIg5-pJ4bHt84QXHuZJ4YlKMHHHG3_ELLsagCQ/viewform?embedded=true" width="500" height="580" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+				<center><h3><font color="blue">Giáo viên: NHẬT KÝ DU HỌC </font> </h3></center>
+			</td>
+			
+		</tr>
+		<tr> <th> <a href="https://www.facebook.com/groups/596195691106914/?ref=share">CLICK HERE</a> </th>
+		</tr>
+    </table>
+</body>
+</html>
